@@ -1,0 +1,138 @@
+body {
+  font-family: Trebuchet MS;
+}
+
+.head-container {
+  position: sticky;
+  top: 0;
+  background: white;
+  margin: 0;
+}
+
+.head {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 45px 10px 45px;
+  
+}
+
+.logo a{
+  font-size: 40px;
+  color: black;
+  
+}
+
+.center-nav-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 200px;
+  padding-left: 25px;
+}
+
+.center-nav-text {
+  font-size: 18px;
+  text-decoration: none;
+  color: black;
+}
+
+.right-nav-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 125px;
+  font-size: 20px;
+}
+
+.right-nav-container a {
+  color: black;
+}
+
+.section1 {
+  background: url(images/section1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 700px;
+  margin-bottom: 20px;
+}
+
+.hero1-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 400px;
+}
+
+.hero-header {
+  width: 275px;
+  font-size: 30px;
+  text-align: center;
+  color: white;
+}
+
+.shop-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 275px;
+}
+
+.shop-buttons a {
+  display: flex;
+  text-decoration: none;
+  color: black;
+  background: white;
+  padding: 10px 15px 10px 15px;
+  border-radius: 25px;
+}
+
+.section2 {
+  background: url(images/section2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 800px;
+  margin-bottom: 20px;
+}
+
+.hero2-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 350px;
+}
+
+.section3 {
+  background: url(images/section3.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 800px;
+}
+
+.hero3-container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 250px;
+  color: white;
+  margin-left: 50px;
+}
+
+.hero3-container i {
+  font-size: 100px;
+  color: white;
+}
+
+.hero3-header {
+  font-size: 25px;
+  width: 600px;
+}
+
+.hero3-text {
+  font-size: 35px;
+}
