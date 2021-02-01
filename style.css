@@ -1,5 +1,11 @@
 body {
   font-family: Trebuchet MS;
+  background: rgb(223, 223, 223);
+}
+
+a {
+  text-decoration: none;
+  color: black;
 }
 
 .head-container {
@@ -21,7 +27,13 @@ body {
 .logo a{
   font-size: 40px;
   color: black;
+  animation-name: shrink;
+  animation-duration: 0.5s;
   
+}
+
+.smartphone-logo {
+  display: none;
 }
 
 .center-nav-container {
@@ -34,8 +46,20 @@ body {
 
 .center-nav-text {
   font-size: 18px;
-  text-decoration: none;
   color: black;
+}
+
+.center-nav-text {
+  animation-name: enlarge;
+  animation-duration: 0.5s;
+}
+
+.center-nav-text:hover {
+  color: rgb(0, 0, 145);
+}
+
+.hamburger {
+  display: none;
 }
 
 .right-nav-container {
@@ -44,10 +68,24 @@ body {
   justify-content: space-between;
   width: 125px;
   font-size: 20px;
+  animation-name: shrink;
+  animation-duration: 0.5s;
 }
 
 .right-nav-container a {
   color: black;
+}
+
+.search-bar a:hover {
+  color: rgb(0, 0, 145);
+}
+
+.user-profile a:hover {
+  color: rgb(0, 0, 145); 
+}
+
+.user-bag a:hover {
+  color: rgb(0, 0, 145);
 }
 
 .section1 {
@@ -57,6 +95,8 @@ body {
   background-size: cover;
   height: 700px;
   margin-bottom: 20px;
+  animation-name: fade-in;
+  animation-duration: 2s;
 }
 
 .hero1-container {
@@ -64,7 +104,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 400px;
+  padding-top: 360px;
 }
 
 .hero-header {
@@ -79,6 +119,16 @@ body {
   flex-direction: row;
   justify-content: space-between;
   width: 275px;
+}
+
+.shop-buttons a {
+  transition: 0.25s;
+  border: solid 2px white;
+}
+
+.shop-buttons a:hover {
+  color: rgb(0, 0, 145);
+  transform: scale(1.1);
 }
 
 .shop-buttons a {
@@ -104,7 +154,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 350px;
+  padding-top: 360px;
 }
 
 .section3 {
@@ -118,7 +168,7 @@ body {
 .hero3-container {
   display: flex;
   flex-direction: column;
-  padding-top: 250px;
+  padding-top: 200px;
   color: white;
   margin-left: 50px;
 }
@@ -126,13 +176,286 @@ body {
 .hero3-container i {
   font-size: 100px;
   color: white;
+  padding-bottom: 20px;
 }
 
 .hero3-header {
-  font-size: 25px;
-  width: 600px;
+  font-size: 50px;
+  width: 800px;
+  margin-top: -1px;
 }
 
 .hero3-text {
+  font-size: 20px;
+  margin-top: -20px;
+}
+
+.read-more {
+  display: flex;
+  text-decoration: none;
+  color: black;
+  background: white;
+  padding: 10px 15px 10px 15px;
+  border-radius: 25px;
+  width: 75px;
+  margin-top: 10px;
+  transition: 0.25s;
+}
+
+.read-more:hover {
+  color: rgb(0, 0, 145);
+  transform: scale(1.1);
+}
+
+.extras-section {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.extra1 {
+  width: 50%;
+  height: 400px;
+  background: url(images/extra1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-right: 10px;
+}
+
+.extra2 {
+  width: 50%;
+  height: 400px;
+  background: url(images/extra2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-left: 10px;
+}
+
+.extra-hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 125px;
+}
+
+.extra-hero-text {
+  color: white;
   font-size: 35px;
+}
+
+.read-more-sub {
+  background: white;
+  border-radius: 25px;
+  padding: 10px 15px 10px 15px;
+}
+
+.read-more-discount {
+  background: white;
+  border-radius: 25px;
+  padding: 10px 15px 10px 15px;
+  transition: 0.25s;
+}
+
+.read-more-discount:hover {
+  color: rgb(0, 0, 145);
+  transform: scale(1.1);
+}
+
+.read-more-sub {
+  background: white;
+  border-radius: 25px;
+  padding: 10px 15px 10px 15px;
+  transition: 0.25s;
+}
+
+.read-more-sub:hover {
+  color: rgb(0, 0, 145);
+  transform: scale(1.1);
+}
+
+.footer-container {
+  background: white;
+  margin-top: 20px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 25px;
+  margin-right: 25px;
+  height: 80px;
+}
+
+.social-media-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 300px;
+}
+
+.social-media-links a {
+  font-size: 20px;
+  transition: 0.25s;
+}
+
+.social-media-links a:hover {
+  color: rgb(0, 0, 145);
+}
+
+@media screen and (max-width: 1200px) {
+  .extras-section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .extra1 {
+    width: 100%;
+    height: 300px;
+    margin: 0;
+  }
+
+  .extra2 {
+    width: 100%;
+    height: 300px;
+    margin: 0;
+    margin-top: 10px;
+  }
+
+  .extra-hero {
+    margin-top: 60px;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 15px;
+  }
+
+  .footer p {
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .social-media-links {
+    margin-top: -15px;
+    width: 90%;
+  }
+  
+  .center-nav-container {
+    display: none;
+  }
+
+  .hero3-header {
+    font-size: 40px;
+    width: 700px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .logo {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+    font-size: 40px;
+    margin-left: -20px;
+    animation-name: fade-in;
+    animation-duration: 2s;
+  }
+
+  .hamburger a:hover {
+    color: rgb(0, 0, 145);
+  }
+
+  .smartphone-logo {
+    display: flex;
+    font-size: 40px;
+    margin-left: 35px;
+  }
+
+  .right-nav-container {
+    width: 70px;
+    margin-right: -20px;
+  }
+
+  .user-profile {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+    font-size: 25px;
+  }
+
+  .hero3-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0;
+    padding-top: 275px;
+  }
+
+  .hero3-header {
+    display: none;
+  }
+
+  .hero3-text {
+    font-size: 23px;
+    margin-top: 10px;
+  }
+
+  .extra-hero {
+    margin-top: 75px;
+  }
+
+  .extra-hero-text {
+    font-size: 25px;
+  }
+
+  .footer p {
+    padding-top: 10px;
+    font-size: 11px;
+  }
+
+}
+
+/*animations--------------------------------------------------------------*/
+
+@keyframes fade-in {
+  0% {
+    opacity: 0%;
+  }
+  
+  100% {
+    opacity: 100%
+  }
+}
+
+@keyframes enlarge {
+  0% {
+    font-size: 0px;
+  }
+
+  100% {
+    font-size: 18px;
+  }
+}
+
+@keyframes shrink {
+  0% {
+    font-size: 1000px;
+  }
+
+  100% {
+    font-size: 40px;
+  }
 }
